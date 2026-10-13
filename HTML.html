@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>WallHub Pro | Free Ultra-HD Wallpapers</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0f172a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow: hidden;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        /* STAGE 1: Premium Wallpaper Bait Interface */
+        #wallpaperSite {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            height: 100%;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        .nav-bar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0 15px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .logo { font-weight: 800; font-size: 18px; color: #38bdf8; }
+        .tag { background: #38bdf8; color: #0f172a; padding: 2px 8px; font-size: 10px; font-weight: bold; border-radius: 20px;}
+        
+        /* Puppy background layout template configuration */
+        .preview-card {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 280px;
+            height: 380px;
+            background-image: url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            position: relative;
+        }
+        .preview-card::after {
+            content: "🔥 TRENDING 4K SHIH TZU";
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            letter-spacing: 1px;
+            background: rgba(15, 23, 42, 0.85);
+            padding: 6px 14px;
+            border-radius: 20px;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+        
+        h1 { font-size: 20px; margin: 10px 0 5px 0; font-weight: 700;}
+        p { font-size: 13px; color: #94a3b8; max-width: 300px; margin: 0 0 20px 0; line-height: 1.5;}
+        
+        .btn-download {
+            background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 50px;
+            width: 100%;
+            max-width: 320px;
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .footer-credit { font-size: 11px; color: #4b5563; margin-top: 5px; }
+
+        /* STAGE 2: PURE BLACK SCREEN OF DEATH */
+        #pureBlackDeath {
+            display: none;
+            background-color: #000000 !important;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999999;
+        }
+
+        /* STAGE 3: VIRUS SCARETREE WINDOW */
+        #errorContainer {
+            display: none;
+            background-color: #000000 !important;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #ff5252;
+            font-family: monospace, "Courier New";
+        }
+        .bold-alert {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            animation: pulse 0.5s infinite alternate;
+        }
+        @keyframes pulse {
+            from { opacity: 0.3; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STAGE 1: The Website Interface -->
+    <div id="wallpaperSite">
+        <div class="nav-bar">
+            <div class="logo">WallHub<span style="color:white">Pro</span></div>
+            <div class="tag">PREMIUM ACCESS</div>
+        </div>
+        
+        <div class="preview-card"></div>
+        
+        <div>
+            <h1>Fluffy Shih Tzu Edition</h1>
+            <p>Download this exclusive, optimized dynamic ultra-HD mobile layout asset directly to your native device partition loop.</p>
+        </div>
+        
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+            <button class="btn-download" onclick="startPrank()">Download 4K Wallpaper</button>
+            <div class="footer-credit">&copy; 2026 Saahil Analytics Systems Global</div>
+        </div>
+    </div>
+
+    <!-- STAGE 2: Black Screen of Pure Death Layer -->
+    <div id="pureBlackDeath"></div>
+
+    <!-- STAGE 3: Flash Alert Layer -->
+    <div id="errorContainer">
+        <div class="bold-alert">⚠️ VIRUS INJECTED: SAAHIL DEORI ⚠️</div>
+    </div>
+
+    <script>
+        function startPrank() {
+            // Freeze mobile scrolling gestures immediately
+            document.body.style.overflow = "hidden";
+            document.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive: false });
+
+            // 1. Instantly change presentation display to pitch black freeze mode
+            document.getElementById('wallpaperSite').style.display = 'none';
+            document.getElementById('pureBlackDeath').style.display = 'block';
+
+            // 2. Keep screen locked down in pitch black for 3.5 seconds
+            setTimeout(() => {
+                document.getElementById('pureBlackDeath').style.display = 'none';
+                document.getElementById('errorContainer').style.display = 'flex';
+                
+                // 3. Keep the custom virus alert on screen for exactly 5 seconds before launching the 4K Rickroll link
+                setTimeout(() => {
+                    // Triggers the official 4K Remastered Rickroll destination
+                    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1';
+                }, 5000);
+
+            }, 3500);
+        }
+    </script>
+
+</body>
+</html>
